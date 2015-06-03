@@ -1,5 +1,7 @@
 # ExpandingTableView
 
+[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage) ![Version status](https://img.shields.io/cocoapods/v/ExpandingTableView.svg) [![license MIT](http://img.shields.io/badge/license-MIT-orange.png)][mitLink]
+
 Framework for expanding table view cells.
 
 ![][working gif]
@@ -7,6 +9,22 @@ Framework for expanding table view cells.
 ## What is this?
 
 Table view infrastructure supporting expanding cells.
+
+## Installation
+
+### Carthage
+
+````bash
+github "jozsef-vesza/ExpandingTableView"
+````
+
+### CocoaPods
+
+````ruby
+use_frameworks!
+
+pod 'ExpandingTableView'
+````
 
 ## Usage
 
@@ -46,3 +64,5 @@ For the details, see the [original project][example project].
 [working gif]: https://camo.githubusercontent.com/9493a28fa722a6bd6a64d24189be10d0d1d9bff4/687474703a2f2f692e696d6775722e636f6d2f333154565172392e676966
 
 [example project]: https://github.com/jozsef-vesza/ExpandableTableView
+
+[mitLink]:http://opensource.org/licenses/MIT
