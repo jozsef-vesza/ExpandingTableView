@@ -9,7 +9,6 @@
 import UIKit
 import ExpandingTableView
 
-let cellIdentifier = "ExpandableCell"
 let detailSegueIdentifier = "showDetailSegue"
 let statusbarHeight: CGFloat = 20
 
