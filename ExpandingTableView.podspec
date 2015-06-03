@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
    s.name = 'ExpandingTableView'
-   s.version = '1.0'
+   s.version = '1.0.1'
    s.license = 'MIT'
 
    s.summary = 'An iOS framework for expanding table view cells.'
