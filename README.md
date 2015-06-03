@@ -1,6 +1,6 @@
 # ExpandingTableView
 
-[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage) ![Version status](https://img.shields.io/cocoapods/v/ExpandingTableView.svg) [![license MIT](http://img.shields.io/badge/license-MIT-orange.png)][mitLink]
+[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage) [![Version status](https://img.shields.io/cocoapods/v/ExpandingTableView.svg)][docLink] [![license MIT](http://img.shields.io/badge/license-MIT-orange.png)][mitLink]
 
 Framework for expanding table view cells.
 
@@ -65,4 +65,6 @@ For the details, see the [original project][example project].
 
 [example project]: https://github.com/jozsef-vesza/ExpandableTableView
 
-[mitLink]:http://opensource.org/licenses/MIT
+[mitLink]: http://opensource.org/licenses/MIT
+
+[docLink]: http://cocoadocs.org/docsets/ExpandingTableView/1.0/
