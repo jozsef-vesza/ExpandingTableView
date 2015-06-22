@@ -8,6 +8,7 @@
 
 import UIKit
 import ExpandingTableView
+import ViewModelExtensions
 
 let detailSegueIdentifier = "showDetailSegue"
 let statusbarHeight: CGFloat = 20

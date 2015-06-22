@@ -7,14 +7,14 @@
 //
 
 import UIKit
+import ViewModelExtensions
 
-class TableViewModel: NSObject, ViewModelType {
+struct TableViewModel: ViewModelType {
     
     let photoStore: PhotoStore
     
     init(photoStore: PhotoStore) {
         self.photoStore = photoStore
-        super.init()
     }
     
     var count: Int {

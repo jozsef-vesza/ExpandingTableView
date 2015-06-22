@@ -14,7 +14,6 @@
 		04FB26581B1EE52100D50FC4 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04FB26561B1EE52100D50FC4 /* LaunchScreen.xib */; };
 		04FB267B1B1EF09800D50FC4 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FB267A1B1EF09800D50FC4 /* MainViewController.swift */; };
 		04FB267D1B1EF0E100D50FC4 /* ExampleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FB267C1B1EF0E100D50FC4 /* ExampleCell.swift */; };
-		04FB26891B1EF2B100D50FC4 /* ViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FB26881B1EF2B100D50FC4 /* ViewControllerExtensions.swift */; };
 		04FB268C1B1EF2BD00D50FC4 /* ToDetailViewPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FB268A1B1EF2BD00D50FC4 /* ToDetailViewPresentationController.swift */; };
 		04FB268D1B1EF2BD00D50FC4 /* BackToMainViewPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FB268B1B1EF2BD00D50FC4 /* BackToMainViewPresentationController.swift */; };
 		04FB268F1B1EF2C200D50FC4 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FB268E1B1EF2C200D50FC4 /* Photo.swift */; };
@@ -22,6 +21,7 @@
 		04FB26941B1EF2D900D50FC4 /* TableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FB26921B1EF2D900D50FC4 /* TableViewModel.swift */; };
 		04FB26951B1EF2D900D50FC4 /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FB26931B1EF2D900D50FC4 /* DetailViewModel.swift */; };
 		04FB26971B1EF30C00D50FC4 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FB26961B1EF30C00D50FC4 /* DetailViewController.swift */; };
+		BBC8EB991B38887C00B0024A /* ViewModelExtensions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBC8EB981B38887C00B0024A /* ViewModelExtensions.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,7 +51,6 @@
 		04FB26571B1EE52100D50FC4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		04FB267A1B1EF09800D50FC4 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		04FB267C1B1EF0E100D50FC4 /* ExampleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleCell.swift; sourceTree = "<group>"; };
-		04FB26881B1EF2B100D50FC4 /* ViewControllerExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerExtensions.swift; sourceTree = "<group>"; };
 		04FB268A1B1EF2BD00D50FC4 /* ToDetailViewPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToDetailViewPresentationController.swift; sourceTree = "<group>"; };
 		04FB268B1B1EF2BD00D50FC4 /* BackToMainViewPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackToMainViewPresentationController.swift; sourceTree = "<group>"; };
 		04FB268E1B1EF2C200D50FC4 /* Photo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
@@ -59,6 +58,7 @@
 		04FB26921B1EF2D900D50FC4 /* TableViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewModel.swift; sourceTree = "<group>"; };
 		04FB26931B1EF2D900D50FC4 /* DetailViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
 		04FB26961B1EF30C00D50FC4 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		BBC8EB981B38887C00B0024A /* ViewModelExtensions.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ViewModelExtensions.framework; path = Carthage/Build/iOS/ViewModelExtensions.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +67,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0446FBC61B1F275800077A02 /* ExpandingTableView.framework in Frameworks */,
+				BBC8EB991B38887C00B0024A /* ViewModelExtensions.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,7 +103,7 @@
 		04FB264A1B1EE52100D50FC4 /* ExpandingExample */ = {
 			isa = PBXGroup;
 			children = (
-				04FB26871B1EF29F00D50FC4 /* Extensions */,
+				BBC8EB9A1B38888400B0024A /* Frameworks */,
 				04FB26861B1EF29D00D50FC4 /* Transitions */,
 				04FB26851B1EF29B00D50FC4 /* Model */,
 				04FB26841B1EF29800D50FC4 /* Data */,
@@ -185,12 +186,13 @@
 			name = Transitions;
 			sourceTree = "<group>";
 		};
-		04FB26871B1EF29F00D50FC4 /* Extensions */ = {
+		BBC8EB9A1B38888400B0024A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				04FB26881B1EF2B100D50FC4 /* ViewControllerExtensions.swift */,
+				BBC8EB981B38887C00B0024A /* ViewModelExtensions.framework */,
 			);
-			name = Extensions;
+			name = Frameworks;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -203,6 +205,7 @@
 				04FB26441B1EE52100D50FC4 /* Sources */,
 				04FB26451B1EE52100D50FC4 /* Frameworks */,
 				04FB26461B1EE52100D50FC4 /* Resources */,
+				BBC8EB9C1B3888F900B0024A /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -281,6 +284,23 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		BBC8EB9C1B3888F900B0024A /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/ViewModelExtensions.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		04FB26441B1EE52100D50FC4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -288,7 +308,6 @@
 			files = (
 				04FB26971B1EF30C00D50FC4 /* DetailViewController.swift in Sources */,
 				04FB268F1B1EF2C200D50FC4 /* Photo.swift in Sources */,
-				04FB26891B1EF2B100D50FC4 /* ViewControllerExtensions.swift in Sources */,
 				04FB26911B1EF2C800D50FC4 /* PhotoStore.swift in Sources */,
 				04FB26951B1EF2D900D50FC4 /* DetailViewModel.swift in Sources */,
 				04FB268C1B1EF2BD00D50FC4 /* ToDetailViewPresentationController.swift in Sources */,
@@ -411,7 +430,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"/Users/jozvesza/Projects/Misc/ExpandingTableView/ExpandingTableView/build/Debug-iphoneos",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = ExpandingExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -425,7 +444,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"/Users/jozvesza/Projects/Misc/ExpandingTableView/ExpandingTableView/build/Debug-iphoneos",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = ExpandingExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import ViewModelExtensions
 
-class DetailViewModel: NSObject, ViewModelType {
+struct DetailViewModel: ViewModelType {
     
     let photoStore: PhotoStore
     let selectedIndex: Int
@@ -16,7 +17,6 @@ class DetailViewModel: NSObject, ViewModelType {
     init(photoStore: PhotoStore, selectedIndex: Int) {
         self.photoStore = photoStore
         self.selectedIndex = selectedIndex
-        super.init()
     }
     
     var authorName: String {

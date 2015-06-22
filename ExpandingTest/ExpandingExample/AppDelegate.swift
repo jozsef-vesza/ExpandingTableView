@@ -15,7 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         if
-            let mainViewController = MainViewController.instanceWithViewModel(TableViewModel(photoStore: PhotoStore.sharedInstance)),
+            let mainViewController = MainViewController.instanceWithViewModel(TableViewModel(photoStore: PhotoStore())),
             let window = self.window {
                 window.rootViewController = mainViewController
                 window.makeKeyAndVisible()

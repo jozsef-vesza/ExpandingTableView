@@ -8,9 +8,7 @@
 
 import UIKit
 
-class PhotoStore: NSObject {
-    
-    static let sharedInstance = PhotoStore()
+struct PhotoStore {
     
     private static let titles = [
         "Photo 1",

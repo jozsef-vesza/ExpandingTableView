@@ -8,7 +8,7 @@
 
 import UIKit
 
-class Photo: NSObject {
+struct Photo {
     
     var title: String
     var author: String
@@ -18,6 +18,5 @@ class Photo: NSObject {
         self.title = title
         self.author = author
         self.image = image
-        super.init()
     }
 }
